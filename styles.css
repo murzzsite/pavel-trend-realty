@@ -90,6 +90,16 @@ img { max-width: 100%; display: block; }
 .hero__card-list li { position: relative; padding-left: 22px; font-size: 14px; color: var(--ink-soft); margin-bottom: 10px; }
 .hero__card-list li::before { content: "✓"; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
 
+/* ABOUT */
+.about-section { padding: 88px 0; }
+.about__inner { display: grid; grid-template-columns: .38fr .62fr; gap: 48px; align-items: center; }
+.about__photo { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 3/3.4; }
+.about__photo img { width: 100%; height: 100%; object-fit: cover; }
+.about__content h2 { font-size: clamp(24px, 3vw, 32px); margin-bottom: 16px; }
+.about__lead { font-size: 17px; color: var(--navy); font-weight: 600; margin-bottom: 16px; }
+.about__content p { color: var(--ink-soft); font-size: 15px; }
+.about__content p + p { margin-top: 12px; }
+
 /* ADVANTAGES */
 .adv-section { background: var(--paper-soft); }
 .adv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
@@ -211,6 +221,8 @@ img { max-width: 100%; display: block; }
   .adv-grid, .services-grid, .cases-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
   .footer__inner { grid-template-columns: 1fr 1fr; }
+  .about__inner { grid-template-columns: 1fr; text-align: center; }
+  .about__photo { max-width: 260px; margin: 0 auto; aspect-ratio: 1/1; }
 }
 @media (max-width: 560px) {
   .header__phone { display: none; }
